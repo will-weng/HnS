@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 534738530}
   - component: {fileID: 534738529}
   - component: {fileID: 534738528}
+  - component: {fileID: 534738531}
   m_Layer: 0
   m_Name: Network Manager
   m_TagString: Untagged
@@ -232,6 +233,19 @@ MonoBehaviour:
   evaluationMethod: 0
   evaluationInterval: 3
   timeInterpolationGui: 0
+--- !u!114 &534738531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534738522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37a8586d7d75f84ba86c3407fcdd89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiplayerUI: {fileID: 1087077675}
 --- !u!1 &956929319
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +788,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2054685964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 534738531}
+        m_TargetAssemblyTypeName: SteamLobby, Assembly-CSharp
+        m_MethodName: HostLobby
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2054685964
 MonoBehaviour:
   m_ObjectHideFlags: 0

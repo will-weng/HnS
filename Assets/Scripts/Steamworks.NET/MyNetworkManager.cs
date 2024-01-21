@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Mirror;
 
-public class CustomNetworkManager : NetworkManager
+public class MyNetworkManager : NetworkManager
 {
 
 }
